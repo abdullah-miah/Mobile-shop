@@ -6,15 +6,21 @@
 }
 .product-container{
     width: 980px;
-    margin-left: 150px;
+    margin-left: 50px;
     margin-top: 50px;
 }
 .cart-container{
     border: 1px solid black;
-    width: 400px;
+    width: 500px;
+    background-color: #FFFFFF;
+  
 }
 .product-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap:45px;
 }
+/* .cart-item{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+} */
