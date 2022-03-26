@@ -24,3 +24,24 @@
     margin-left: 40px;
     margin-bottom: 20px;
 }
+/* media Queary */
+@media screen and (max-width: 480px) {
+    body{
+        width: 400px;
+    }
+    .shop-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .product-container{
+        grid-template-columns: repeat(1, 1fr);
+        width: 480px;
+        margin-left: 0px;
+    }
+    .cart-container{
+        width: 300px;
+    }
+    .cart-item{
+        margin-left: 0px;
+        
+    }
+  }

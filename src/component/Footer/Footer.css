@@ -1,0 +1,12 @@
+.footer-info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 980px;
+    margin: 0 auto;
+}
+@media screen and (max-width: 480px) {
+    .footer-info{
+        grid-template-columns: repeat(1, 1fr);
+        width:400px;
+    }
+  }

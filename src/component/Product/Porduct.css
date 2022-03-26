@@ -29,3 +29,11 @@
 .product-info{
     margin-left: 50px;
 }
+@media screen and (max-width: 480px) {
+    .btn{
+        width: 300px;
+    }
+    .product{
+        width: 400px;
+    }
+  }
