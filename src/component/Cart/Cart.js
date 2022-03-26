@@ -1,9 +1,8 @@
 import React from 'react';
-import Choose from '../Choose/Choose';
 import './Cart.css'
 
 const Cart = (props) => {
-    const {name, img, price,id}=props.cart;
+    const {name, img, price}=props.cart;
     // const random=Math.floor(Math.random(id)*4)+1;
     // if(random){
     //     console.log(props.cart);
