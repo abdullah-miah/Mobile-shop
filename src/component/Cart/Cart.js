@@ -1,11 +1,12 @@
 import React from 'react';
+import Choose from '../Choose/Choose';
 import './Cart.css'
 
-const Cart = ({cart}) => {
-    const {name, img, price}= cart;
-    // let name ;
-    // for(const product of cart){
-        
+const Cart = (props) => {
+    const {name, img, price,id}=props.cart;
+    // const random=Math.floor(Math.random(id)*4)+1;
+    // if(random){
+    //     console.log(props.cart);
     // }
     return (
         <div className='order-summary' >
@@ -14,9 +15,11 @@ const Cart = ({cart}) => {
                <p>{name}</p>
            </div>
            <div className="price">
-              <p> {price}</p>
+              <p> {price} BDT</p>
            </div>
-           <button>Close</button>
+           <button className='btn-close'>Close</button>
+           <div>
+           </div>
         </div>
     );
 };

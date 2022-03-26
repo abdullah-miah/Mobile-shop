@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
+import Choose from '../Choose/Choose';
 import Product from '../Product/Product';
 import './Shop.css'
 
 const Shop = () => {
     const [product, setProduct]=useState([]);
-    const [cart, setCart]=useState([])
+    const [cart, setCart]=useState([]);
     useEffect(()=>{
         fetch('mobile.json')
         .then(res => res.json())
@@ -17,6 +18,12 @@ const Shop = () => {
             const newCart = [...cart, product];
             setCart(newCart);
          };
+         const chooseOne=(product)=>{
+            
+        }
+         if(cart.length===4){
+            alert("Don't select more")
+         }
     return (
         <div className='shop-container'>
             <div className="product-container">
@@ -40,6 +47,14 @@ const Shop = () => {
                         key={cart.id}
                         ></Cart>)
                     }
+                    </div>
+                    <div>
+                        
+                         <Choose
+                           cart={cart}
+                            chooseOne={chooseOne}
+                          ></Choose>)
+                        
                     </div>
             </div>
         </div>

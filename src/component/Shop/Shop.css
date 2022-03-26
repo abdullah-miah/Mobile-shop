@@ -20,7 +20,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap:45px;
 }
-/* .cart-item{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-} */
+.cart-item{
+    margin-left: 40px;
+    margin-bottom: 20px;
+}

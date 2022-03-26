@@ -1,12 +1,20 @@
 .order-summary{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    /* grid-template-columns: repeat(4, 1fr); */
+    align-items: center;
+    border: 1px solid black;
+    width: 360px;
+    height: 65px;
+    margin-bottom: 20px;
 }
 .order-summary img{
     width: 40px;
     height: 40px;
     border-radius: 50%;
+
 }
-button{
+.btn-close{
     border: none;
+    width: 60px;
+    height: 30px;
 }
